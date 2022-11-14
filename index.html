@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labb 2</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="my-navbar">
+        <div class="logo"><a href="index.html">Holidays</a></div>
+        <a href="#" class="mobile-button">
+          <img src="" alt="" />
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-image">
+        <div class="hero-text">
+          <h1>WANT TO TRAVEL?</h1>
+          <h1>WE'LL HELP YOU DECIDE WHERE</h1>
+        </div>
+        <img
+          src="/img/75802-travel-global-illustration-landmark-drawing-icon.png"
+          alt="Travel picture"
+        />
+      </section>
+      <!-- FORM -->
+
+      <div class="center">
+        <h1>Choose country</h1>
+        <form>
+          <div class="inputbox">
+            <input id="country" type="text" required="required" />
+            <span>Country Prefix</span>
+          </div>
+          <div class="inputbox">
+            <!-- <button
+              type="btn"
+              id="btn"
+              class="submitButton"
+              onclick="country()"
+            >
+              Submit
+            </button> -->
+            <input
+              id="submitButton"
+              type="button"
+              value="submit"
+              onclick="country()"
+            />
+          </div>
+        </form>
+      </div>
+      <!-- Result from search -->
+      <div id="result"></div>
+    </main>
+    <footer class="my-footer"><p>© Tim Viklund Fjesme 2022</p></footer>
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+  </body>
+</html>
