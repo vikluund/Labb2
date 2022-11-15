@@ -44,28 +44,28 @@
             <span>Country Prefix</span>
           </div>
           <div class="inputbox">
-            <!-- <button
-              type="btn"
-              id="btn"
-              class="submitButton"
-              onclick="country()"
-            >
+            <button type="button" id="btn" class="submitButton">
               Submit
-            </button> -->
-            <input
+            </button>
+            <!-- <input
               id="submitButton"
               type="button"
               value="submit"
               onclick="country()"
-            />
+            /> -->
           </div>
         </form>
       </div>
       <!-- Result from search -->
-      <div id="result"></div>
+      <div id="results"></div>
+      <div>
+        <canvas id="myChart" width="400" height="400"></canvas>
+      </div>
     </main>
     <footer class="my-footer"><p>© Tim Viklund Fjesme 2022</p></footer>
     <!-- Custom JS -->
     <script src="index.js"></script>
+    <!-- chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </body>
 </html>

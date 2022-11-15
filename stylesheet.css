@@ -160,12 +160,46 @@ html {
   transform: translateX(-13px) translateY(-35px);
   font-size: 1em;
 }
-.center .inputbox [type="button"] {
+.center .inputbox button {
   width: 50%;
-  background: dodgerblue;
+  height: 80%;
+  background: #1e90ff;
   color: #fff;
   border: #fff;
+  font-size: 1.5em;
+  border-radius: 4px;
 }
-.center .inputbox:hover [type="button"] {
+.center .inputbox:hover button {
   background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
+
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10vw;
+}
+
+.result {
+  border-bottom: 1px solid #1e90ff;
+  margin-left: 3vw;
+  margin-bottom: 4vh;
+}
+
+.table {
+  font-size: 2em;
+
+  margin-bottom: 2vh;
+}
+
+.table thead tr th {
+  font-weight: bold;
+}
+
+.table thead tr {
+  font-size: 1.5em;
+}
+
+.table tbody tr td {
+  padding-left: 5vw;
+  font-weight: 600;
 }
