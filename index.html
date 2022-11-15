@@ -18,7 +18,7 @@
         <div class="navbar-links">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">Breweries</a></li>
           </ul>
         </div>
       </nav>
@@ -27,7 +27,7 @@
       <section class="hero-image">
         <div class="hero-text">
           <h1>WANT TO TRAVEL?</h1>
-          <h1>WE'LL HELP YOU DECIDE WHERE</h1>
+          <h1>WE'LL GIVE YOU A HELPING HAND</h1>
         </div>
         <img
           src="/img/75802-travel-global-illustration-landmark-drawing-icon.png"
@@ -35,32 +35,33 @@
         />
       </section>
       <!-- FORM -->
-
-      <div class="center">
-        <h1>Choose country</h1>
-        <form>
-          <div class="inputbox">
-            <input id="country" type="text" required="required" />
-            <span>Country Prefix</span>
-          </div>
-          <div class="inputbox">
-            <button type="button" id="btn" class="submitButton">
-              Submit
-            </button>
-            <!-- <input
+      <section class="search">
+        <div class="center">
+          <h1>Choose country</h1>
+          <form>
+            <div class="inputbox">
+              <input id="country" type="text" required="required" />
+              <span>Country Prefix</span>
+            </div>
+            <div class="inputbox">
+              <button type="button" id="btn" class="submitButton">
+                Submit
+              </button>
+              <!-- <input
               id="submitButton"
               type="button"
               value="submit"
               onclick="country()"
             /> -->
-          </div>
-        </form>
-      </div>
+            </div>
+          </form>
+        </div>
+      </section>
       <!-- Result from search -->
       <div id="results"></div>
-      <div>
-        <canvas id="myChart" width="400" height="400"></canvas>
-      </div>
+      <!-- <div class="chart">
+        <canvas id="myChart"></canvas>
+      </div> -->
     </main>
     <footer class="my-footer"><p>© Tim Viklund Fjesme 2022</p></footer>
     <!-- Custom JS -->

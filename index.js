@@ -72,43 +72,40 @@ selectCountry.addEventListener('input', () => {
 });
 
 
-fetch('https://datausa.io/api/data?drilldowns=Nation&measures=Population')
-.then((response) => response.json())
-.then((result) => {
-  const ctx = document.getElementById('myChart').getContext('2d');
-  const data = [],
-  labels = [];
+// fetch('https://api.openbrewerydb.org/breweries')
+// .then((response) => response.json())
+// .then((result) => {
+//   const ctx = document.getElementById('myChart').getContext('2d');
+//   const data = [],
+//   labels = [];
 
-  for(let n = 0; n < result.length; n++) {
-    const holiday = result[n]
+//   for(let n = 0; n < result.length; n++) {
+//     const holiday = result[n]
 
-    data.push(holiday.Population)
-    labels.push(holiday.Year)
-  }
-  console.log('data', data);
-  console.log('labels', labels);
-})
+//     data.push(holiday.phone)
+//     labels.push(holiday.name)
+//   }
+//   // console.log('data', data);
+//   // console.log('labels', labels);
 
+//   new Chart(ctx, {
+//     type: 'bar',
+//     data: {
+//       labels: labels,
+//       datasets: [{
+//         label: 'Phone Number',
+//         data: data,
+//         borderWidth: 1,
+//         backgroundColor: 'rgba(0, 0, 256, 0.1)'
+//       }]
+//     },
+//     options: {
+//       scales: {
+//         y: {
+//           beginAtZero: true
+//         }
+//       }
+//     }
+//   });
 
-  // CHART JS
-
-  // const ctx = document.getElementById('myChart');
-
-  // new Chart(ctx, {
-  //   type: 'bar',
-  //   data: {
-  //     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-  //     datasets: [{
-  //       label: '# of Votes',
-  //       data: [12, 19, 3, 5, 2, 3],
-  //       borderWidth: 1
-  //     }]
-  //   },
-  //   options: {
-  //     scales: {
-  //       y: {
-  //         beginAtZero: true
-  //       }
-  //     }
-  //   }
-  // });
+// })

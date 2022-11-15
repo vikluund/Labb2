@@ -32,6 +32,8 @@ html {
   font-weight: bold;
   margin-left: 1vh;
   margin-top: 0;
+  border-bottom: 3px solid dodgerblue;
+  border-radius: 7px;
 }
 
 .logo a {
@@ -93,6 +95,22 @@ html {
   font-weight: 600;
 }
 
+.hero-text2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  margin: 0 auto;
+  /* width: 30%; */
+  border-bottom: 5px solid dodgerblue;
+}
+
+.hero-text2 h1 {
+  font-size: 8vh;
+  margin-top: 10vh;
+  font-weight: 600;
+}
+
 .my-footer {
   text-align: center;
   color: var(--white);
@@ -117,6 +135,7 @@ html {
 .center h1 {
   font-size: 3em;
   border-left: 5px solid dodgerblue;
+  border-radius: 5px;
   padding: 10px;
   color: #000;
   letter-spacing: 5px;
@@ -173,15 +192,86 @@ html {
   background: linear-gradient(45deg, greenyellow, dodgerblue);
 }
 
+/* ABOUT PAGE FORM */
+.center2 {
+  margin-left: 35vw;
+  position: relative;
+  padding: 50px 50px;
+  background: #fff;
+  border-radius: 10px;
+}
+.center2 h1 {
+  font-size: 2em;
+  border-left: 5px solid dodgerblue;
+  padding: 10px;
+  color: #000;
+  letter-spacing: 5px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.center2 .inputbox2 {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+.center2 .inputbox2 input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+.center2 .inputbox2:last-child {
+  margin-bottom: 0;
+}
+.center2 .inputbox2 span {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 1em;
+  transition: 0.6s;
+  font-family: sans-serif;
+}
+.center2 .inputbox2 input:focus ~ span,
+.center2 .inputbox2 input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+}
+.center2 .inputbox2 [type="button"] {
+  width: 50%;
+  background: dodgerblue;
+  color: #fff;
+  border: #fff;
+}
+.center2 .inputbox2:hover [type="button"] {
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
+
+.search img {
+  height: 40vh;
+  width: 40vh;
+  object-fit: contain;
+  margin-left: 50vw;
+}
+
 #results {
   display: flex;
   flex-wrap: wrap;
   padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .result {
   border-bottom: 1px solid #1e90ff;
   margin-left: 3vw;
+  margin-right: 3vw;
   margin-bottom: 4vh;
 }
 
@@ -192,6 +282,7 @@ html {
 }
 
 .table thead tr th {
+  padding-left: 2vw;
   font-weight: bold;
 }
 
@@ -200,6 +291,15 @@ html {
 }
 
 .table tbody tr td {
-  padding-left: 5vw;
+  padding-left: 2vw;
   font-weight: 600;
+}
+
+.chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 80vw;
+  margin: 10vh auto;
 }
